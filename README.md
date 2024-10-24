@@ -1,17 +1,26 @@
-# cinetradexa
+_# cinetradexa
 
 A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+CineTradexa is a Flutter-based movie search application that allows users to search for movies by their title using the OMDB API. It provides a simple user interface where users can input a movie title and view a list of matching movies, complete with posters, titles, release years, and IMDB IDs.
 
-A few resources to get you started if this is your first Flutter project:
+Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Search for movies using the OMDB API.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# cinetradexa" 
+Display movie details including poster, title, release year, and IMDB ID.
+
+Clean and responsive UI with a search bar and a dynamic list view.
+
+Utilizes Provider for state management (optional bonus).
+
+
+├── lib
+│   ├── api.dart                 # Contains logic for making API calls to OMDB
+│   ├── main.dart                # Main entry point of the app
+│   ├── providers
+│   │   └── movie_provider.dart  # Handles the state management using Provider
+├── pubspec.yaml                 # Dependencies and project configuration
+

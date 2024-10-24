@@ -85,9 +85,7 @@ class _SearchScreenState extends State<SearchScreen> {
                             : Icon(Icons.movie),
                         title: Text(movie['Title']),
                         subtitle: Text(movie['Year']),
-                        trailing: Text('IMDB: ${movie['imdbID']}'),
-                      );
-                    },
+                        trailing: Text('IMDB: ${movie['imdbID']}'),);},
                   );
                 }
               },
