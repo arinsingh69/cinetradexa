@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'providers/movie_provider.dart';
 import 'api.dart';
-
 void main() {
   runApp(
     MultiProvider(
@@ -10,10 +9,7 @@ void main() {
         ChangeNotifierProvider(create: (_) => MovieProvider()),
       ],
       child: MyApp(),
-    ),
-  );
-}
-
+    ),   );  }
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -24,18 +20,13 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: SearchScreen(),
-    );
-  }
-}
-
+    );  } }
 class SearchScreen extends StatefulWidget {
   @override
   _SearchScreenState createState() => _SearchScreenState();
 }
-
 class _SearchScreenState extends State<SearchScreen> {
   String query = '';
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
